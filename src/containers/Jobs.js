@@ -4,23 +4,17 @@ import Feed from "../components/Jobs/JobFeed";
 
 class Jobs extends Component {
   state = {
-    jobResults: [
-      {
-        name: "Job1"
-      },
-      {
-        name: "Job2"
-      },
-      {
-        name: "Job3"
-      }
-    ]
+    jobResults: []
   };
+
+  handleSearch = results => {
+    this.setState({ jobResults: results})
+  }
 
   render() {
     return (
       <div>
-        <Search />
+        <Search saveResults={this.handleSearch}/>
         <Feed jobs={this.state.jobResults} />
       </div>
     );

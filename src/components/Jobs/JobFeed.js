@@ -4,18 +4,20 @@ export default class JobFeed extends Component {
   render() {
     const feedStyle = {
       backgroundColor: "whitesmoke",
-      height: "80vh"
+      minHeight: "80vh"
     };
 
     let jobs = this.props.jobs.map(job => (
-      <li class="list-group-item">{job.name}</li>
+      <li className="list-group-item">
+      <p><a href={`${job.url}`} target="_blank" rel="noopener noreferrer">{job.title}</a></p>
+      <p>{job.location}, {job.type}</p></li>
     ));
 
     return (
       <div className="container-fluid" style={feedStyle}>
         <div className="container pt-3">
             <p className="ml-3 font-weight-bold">Recent Searches</p>
-            <ul class="list-group">
+            <ul className="list-group pb-5">
                 {jobs}
             </ul>
         </div>
