@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 import { Switch, Route} from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Jobs from "./components/Jobs";
+import Articles from "./components/Articles";
 
 class App extends Component {
   render() {
-    return (
-      <Navbar />
-      
-    );
+    return <div>
+        <Navbar />
+        <Switch>
+          <Route path="/articles" exact render={props => <Jobs {...props} />} />
+          <Route path="/" exact render={props => <Articles {...props} />} />
+        </Switch>
+      </div>;
   }
 }
 
