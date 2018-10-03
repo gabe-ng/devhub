@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { Icon } from "react-icons-kit";
+import { star } from 'react-icons-kit/fa/star'
 
 export default class Nav extends Component {
   render() {
-    const navStyle = {
-      backgroundColor: "lightGreen"
-    };
-
-    return (
-      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal">DEV HUB.</h5>
-        <nav class="my-2 my-md-0 mr-md-3">
+    return <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 className="my-0 mr-md-auto font-weight-normal">DEV HUB.</h5>
+        <nav className="my-2 my-md-0 mr-md-3">
           <NavLink to="/favorites" className="p-2 text-dark">
-            STAR
+            <Icon icon={star} />
           </NavLink>
           <NavLink to="/" className="p-2 text-dark">
             Jobs
@@ -21,7 +18,6 @@ export default class Nav extends Component {
             Articles
           </NavLink>
         </nav>
-      </div>
-    );
+      </div>;
   }
 }
