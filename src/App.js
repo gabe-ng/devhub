@@ -10,8 +10,8 @@ class App extends Component {
     return <div>
         <Navbar />
         <Switch>
-          <Route path="/articles" exact render={props => <Jobs {...props} />} />
-          <Route path="/" exact render={props => <Articles {...props} />} />
+          <Route path="/articles" exact render={props => <Articles {...props} />} />
+          <Route path="/" exact render={props => <Jobs {...props} />} />
         </Switch>
       </div>;
   }
