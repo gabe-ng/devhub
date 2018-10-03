@@ -7,14 +7,16 @@ export default class JobFeed extends Component {
       height: "80vh"
     };
 
+    let articles = this.props.articles.map(article => (
+      <li class="list-group-item">{article.name}</li>
+    ));
+
     return (
       <div className="container-fluid" style={feedStyle}>
         <div className="container pt-3">
             <p className="ml-3 font-weight-bold">Recent Searches</p>
             <ul class="list-group">
-                <li class="list-group-item">Filler</li>
-                <li class="list-group-item">Filler</li>
-                <li class="list-group-item">Filler</li>
+                {articles}
             </ul>
         </div>
       </div>
