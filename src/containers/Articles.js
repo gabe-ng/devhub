@@ -4,26 +4,18 @@ import Feed from "../components/Articles/ArticleFeed";
 
 class Articles extends Component {
   state = {
-    articleResults: [
-      {
-        name: "Article1"
-      },
-      {
-        name: "Article2"
-      },
-      {
-        name: "Article3"
-      }
-    ]
+    articleResults: []
   };
 
+  handleSearch = results => {
+    this.setState({ articleResults: results })
+  }
+
   render() {
-    return (
-      <div>
-        <Search />
-        <Feed articles={this.state.articleResults}/>
-      </div>
-    );
+    return <div>
+        <Search saveResults={this.handleSearch} />
+        <Feed articles={this.state.articleResults} />
+      </div>;
   }
 }
 
