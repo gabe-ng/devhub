@@ -11,7 +11,7 @@ export default class Nav extends Component {
           <NavLink to="/favorites" className="p-2 text-dark">
             <Icon icon={star} />
           </NavLink>
-          <NavLink to="/" className="p-2 text-dark">
+          <NavLink to="/devhub" className="p-2 text-dark">
             Jobs
           </NavLink>
           <NavLink to="/articles" className="p-2 text-dark">

@@ -13,7 +13,7 @@ class App extends Component {
         <Switch>
           <Route path="/favorites" exact render={props => <Favorites {...props} />} />
           <Route path="/articles" exact render={props => <Articles {...props} />} />
-          <Route path="/" exact render={props => <Jobs {...props} />} />
+          <Route path="/devhub" exact render={props => <Jobs {...props} />} />
         </Switch>
       </div>;
   }
