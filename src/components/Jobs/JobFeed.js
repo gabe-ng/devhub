@@ -8,9 +8,16 @@ export default class JobFeed extends Component {
     };
 
     let jobs = this.props.jobs.map(job => (
-      <li className="list-group-item">
-      <p><a href={`${job.url}`} target="_blank" rel="noopener noreferrer">{job.title}</a></p>
-      <p>{job.location}, {job.type}</p></li>
+      <li className="list-group-item mb-2">
+        <p>
+          <a href={`${job.url}`} target="_blank" rel="noopener noreferrer">
+            {job.title}
+          </a>
+        </p>
+        <p>
+          {job.location}, {job.type}
+        </p>
+      </li>
     ));
 
     return (

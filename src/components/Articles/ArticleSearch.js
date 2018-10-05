@@ -37,15 +37,19 @@ export default class ArticleSearch extends Component {
     render() {
         return <div className="container mt-5 w-50">
             <div className="input-group mb-2">
-                <div className="input-group-prepend">
-                    <span className="input-group-text" id="basic-addon1">
-                        <Icon icon={search} />
-                    </span>
-                </div>
-                <input type="text" className="form-control mr-1 w-25" placeholder="Topic" aria-label="Job Title" name="topic" onChange={this.handleChange} />                
-                <button type="button" className="btn btn-success ml-2" onClick={this.handleSearch}>Search</button>
+              <div className="input-group-prepend">
+                <span className="input-group-text" id="basic-addon1">
+                  <Icon icon={search} />
+                </span>
+              </div>
+              <input type="text" className="form-control mr-1 w-25" placeholder="Topic" aria-label="Job Title" name="topic" onChange={this.handleChange} />
+              <button type="button" className="btn ml-2 bg-light text-dark " onClick={this.handleSearch}>
+                Search
+              </button>
             </div>
-            <p className="text-center">Learn about recent news with Dev Hub.</p>
-        </div>;
+            <p className="text-center">
+              Learn about recent news with Dev Hub.
+            </p>
+          </div>;
     }
 }

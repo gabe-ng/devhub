@@ -46,7 +46,7 @@ export default class JobSearch extends Component {
             </span>
           </div>
           <input type="text" className="form-control w-25" placeholder="City" aria-label="City" name="location" onChange={this.handleChange} />
-          <button type="button" className="btn btn-success ml-2" onClick={this.handleSearch}>Search</button>
+        <button type="button" className="btn bg-light text-dark ml-2" onClick={this.handleSearch}>Search</button>
         </div>
         <p className="text-center">Find your next career with Dev Hub.</p>
       </div>;

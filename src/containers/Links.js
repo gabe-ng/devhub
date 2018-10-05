@@ -17,37 +17,37 @@ class Links extends Component {
         <div className="container-fluid" style={savedContainer}>
           <div className="container pt-4">
             <ul class="list-group">
-              <li class="list-group-item">
+              <li class="list-group-item mb-2">
                 <a href="https://github.com/dypsilon/frontend-dev-bookmarks" target="_blank" rel="noopener noreferrer">
                   Frontend Dev Bookmarks
                 </a>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item mb-2">
                 <a href="https://www.keycdn.com/blog/web-development-tools" target="_blank" rel="noopener noreferrer">
                   Web Development Tools
                 </a>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item mb-2">
                 <a href="https://hackernoon.com/the-top-66-developer-resources-from-2017-e82531365e6d" target="_blank" rel="noopener noreferrer">
                   Top Developer Resources from 2017
                 </a>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item mb-2">
                 <a href="https://developers.google.com/web/" target="_blank" rel="noopener noreferrer">
                   Google Developers
                 </a>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item mb-2">
                 <a href="https://skillcrush.com/2017/06/14/web-developer-free-resources/" target="_blank" rel="noopener noreferrer">
                   Web Developer Resources
                 </a>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item mb-2">
                 <a href="https://medium.com/dvlprstash/free-resources-for-developers-dec-2017-d23eddd83f5" target="_blank" rel="noopener noreferrer">
                   Free Open Source Resources
                 </a>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item mb-2">
                 <a href="https://www.hongkiat.com/blog/web-developer-resources-compilation/" target="_blank" rel="noopener noreferrer">
                   A Mega Compilation of Developer Resources
                 </a>

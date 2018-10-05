@@ -18,7 +18,7 @@ export default class JobFeed extends Component {
       }
 
       return (
-        <li className="list-group-item" key={article.created_at_i}>
+        <li className="list-group-item mb-2" key={article.created_at_i}>
         <p><a href={`${article.url}`} target="_blank" rel="noopener noreferrer">{article.title}</a></p>
         <p>Date: {date3}</p>
       </li>
