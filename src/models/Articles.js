@@ -11,6 +11,8 @@ export default class ArticleModels {
 
     static initalLoad() {
         let url = `https://hn.algolia.com/api/v1/search_by_date?tags=story`;
+        console.log(url);
+        
         let request = axios.get(url);
 
         return request;

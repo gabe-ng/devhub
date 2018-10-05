@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
-class Favorites extends Component {
+class Links extends Component {
   render() {
     const savedContainer = {
       backgroundColor: "whitesmoke",
-      height: "84vh"
+      minHeight: "84vh"
     }
 
     return <div>
         <div className="container-fluid">
-          <h3 className="text-center pt-3 pb-3">Favorites</h3>
+          <h3 className="text-center pt-3 pb-3">Links</h3>
         </div>
         <div className="container-fluid" style={savedContainer}>
           <div className="container pt-4">
@@ -31,4 +31,4 @@ class Favorites extends Component {
   }
 }
 
-export default Favorites;
+export default Links;
