@@ -6,6 +6,7 @@ This app is a centralized service for searching new job positions via GitHub Job
 
 * React
 * Axios
+* Bootstrap
 
 ## APIs
 
