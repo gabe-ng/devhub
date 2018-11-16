@@ -10,10 +10,10 @@ export default class Nav extends Component {
           <NavLink to="/devhub" className="p-2 text-dark">
             Jobs
           </NavLink>
-          <NavLink to="/articles" className="p-2 text-dark">
+          <NavLink to="/devhub/articles" className="p-2 text-dark">
             Articles
           </NavLink>
-          <NavLink to="/links" className="p-2 text-dark">
+          <NavLink to="/devhub/links" className="p-2 text-dark">
             Links
           </NavLink>
         </nav>
